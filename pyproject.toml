@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vcl2covcl"
+dynamic = ["version"]
+description = "Turn the VCLvACC TopSky EuroScope profiles into French-style CoVCL profiles"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: Microsoft :: Windows",
+    "Environment :: Console",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+build = ["pyinstaller>=6"]
+
+[project.scripts]
+vcl2covcl = "vcl2covcl.cli:main"
+
+[project.gui-scripts]
+vcl2covcl-gui = "vcl2covcl.gui:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "vcl2covcl.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["vcl2covcl*"]
+
+[tool.setuptools.package-data]
+vcl2covcl = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

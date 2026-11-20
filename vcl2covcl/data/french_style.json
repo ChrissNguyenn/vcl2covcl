@@ -1,0 +1,825 @@
+{
+ "generated_by": "tools/extract_french_style.py",
+ "sources": {
+  "v2": {
+   "name": "vaccfr/Sector-Files release 2610_1",
+   "licence": "none published: only these values are used",
+   "files": {
+    "Symbology.txt": "48ac27b155bbccc95906f6048f4c3855e2983d06a4c21c067db8a47168317020",
+    "_CoFranceV2_template.asr": "4df50114666dd1e3545d30439e9f2d92dcc399d442985629394f51d70633d192"
+   }
+  },
+  "v1": {
+   "name": "https://github.com/vaccfr/France-Controller-Pack",
+   "commit": "a48f1b165d94d44b57016d296be887a2b0d7be23",
+   "licence": "GNU GPL v3, Copyright (C) 2020 French vACC (Pierre Ferran)",
+   "files": {
+    "Settings/AllSettings.txt": "a31c16f9da14c8db99bd627b4b4c90f4b4a65ace8f68c19dd806d79d93a7935c",
+    "ASR/1_CTR.asr": "27f9c83b5d78060d4bdf820392ed740beddba90089fa433842391dd0d5397313"
+   }
+  }
+ },
+ "symbology": {
+  "colours": {
+   "Airports:symbol": "6579300:1.0:0:0:7",
+   "Airports:name": "6579300:4.5:0:0:1",
+   "Low airways:line": "5135955:3.5:0:0:7",
+   "Low airways:name": "6579300:3.5:0:0:8",
+   "High airways:line": "5135955:3.5:0:0:7",
+   "High airways:name": "2512998:3.5:0:0:8",
+   "Fixes:symbol": "5135955:1.0:0:0:7",
+   "Fixes:name": "6579300:3.5:0:0:1",
+   "Sids:line": "5135955:3.0:4:0:7",
+   "Stars:line": "5135955:3.0:4:0:7",
+   "ARTCC high boundary:line": "0:3.0:0:0:7",
+   "ARTCC boundary:line": "5855577:3.0:2:0:7",
+   "ARTCC low boundary:line": "5855577:3.0:0:0:7",
+   "Geo:line": "5135955:3.0:0:0:7",
+   "VORs:symbol": "5135955:1.0:0:0:6",
+   "VORs:name": "6579300:3.5:0:0:2",
+   "VORs:frequency": "6579300:3.5:0:0:2",
+   "NDBs:symbol": "5135955:1.0:0:0:7",
+   "NDBs:name": "6579300:3.5:0:0:2",
+   "NDBs:frequency": "6579300:3.5:0:0:0",
+   "Runways:centerline": "0:3.5:0:0:7",
+   "Runways:extended centerline": "5135955:3.5:0:0:7",
+   "Runways:name": "16777215:4.0:0:0:7",
+   "Datablock:non concerned": "9342606:4.0:0:0:7",
+   "Datablock:notified": "7123796:4.0:0:0:7",
+   "Datablock:assumed": "13750737:4.0:0:0:7",
+   "Datablock:transfer to me initiated": "7850665:4.0:0:0:7",
+   "Datablock:redundant": "15585660:4.0:0:0:7",
+   "Datablock:information": "65535:4.0:0:0:7",
+   "Datablock:even flight level": "16777215:3.5:0:0:7",
+   "Datablock:odd flight level": "16777215:3.5:0:0:7",
+   "Datablock:arrivals": "11579647:4.0:0:0:7",
+   "Datablock:departures": "16439410:4.0:0:0:7",
+   "Datablock:user 1": "16777215:4.0:0:0:7",
+   "Datablock:user 2": "16777215:3.5:0:0:7",
+   "Datablock:user 3": "16777215:3.5:0:0:7",
+   "Datablock:user 4": "16777215:3.5:0:0:7",
+   "Datablock:user 5": "16777215:3.5:0:0:7",
+   "Datablock:user 6": "1552127:4.0:0:0:7",
+   "Datablock:emergency": "3289855:4.0:0:0:7",
+   "Datablock:ongoing requested by me": "12615935:4.0:0:0:7",
+   "Datablock:ongoing requested by other": "8454016:4.0:0:0:7",
+   "Datablock:ongoing accepted": "65535:4.0:0:0:7",
+   "Datablock:ongoing refused": "65535:4.0:0:0:7",
+   "Datablock:detailed background": "1447446:4.0:0:0:7",
+   "Datablock:active item background": "3223857:4.0:0:0:7",
+   "Datablock:arrival background": "1395241:4.0:0:0:7",
+   "Datablock:departure background": "4264977:4.0:0:0:7",
+   "Datablock:AC list background": "1447446:3.5:0:0:7",
+   "Datablock:AC list selected background": "3158064:3.5:0:0:7",
+   "Datablock:dimmed at conflict detection": "5263440:3.5:0:0:7",
+   "Datablock:SCTA warning rectangle": "3289855:3.5:0:0:7",
+   "Datablock:SCTA CFL used warning rectangle": "65535:3.5:0:0:7",
+   "Datablock:SCTA warning leader": "3289855:3.5:0:3:7",
+   "Datablock:SCTA CFL used warning leader": "65535:3.5:0:3:7",
+   "Controller:normal": "16777215:3.5:0:0:7",
+   "Controller:breaking": "6776683:3.5:0:0:7",
+   "Controller:timeout": "255:3.5:0:0:7",
+   "Metar:normal": "16777215:5.5:0:0:7",
+   "Metar:modified": "14276864:5.5:0:0:7",
+   "Metar:timeout": "255:5.5:0:0:7",
+   "Other:wait": "16777215:3.5:0:0:7",
+   "Other:distance line": "12378805:3.5:2:0:7",
+   "Other:distance values": "16777215:4.0:0:0:7",
+   "Other:distance annotation": "16777215:3.5:0:0:7",
+   "Other:separation leader": "16777215:3.5:0:1:7",
+   "Other:separation leader2": "16777215:3.5:0:1:7",
+   "Other:find": "16777215:3.5:0:5:7",
+   "Other:valid airway": "12378805:3.5:0:1:7",
+   "Other:bad direction airway": "255:3.5:0:1:7",
+   "Other:unconnected airway": "16711680:3.5:0:1:7",
+   "Other:direct no airway": "12378805:3.5:0:1:7",
+   "Other:free of conflict": "65280:3.5:0:2:7",
+   "Other:conflict warning": "65535:3.5:0:2:7",
+   "Other:conflict detected": "255:3.5:0:2:7",
+   "Other:route annotation": "16777215:3.5:0:2:7",
+   "Other:freetext": "16777215:3.5:0:0:7",
+   "Other:range rings": "5395026:5.0:0:0:2",
+   "Other:off antenna range rings": "255:5.0:0:0:2",
+   "Other:plane range rings": "5921370:5.0:0:0:2",
+   "Other:manual taxi line": "16777215:5.0:0:3:2",
+   "Other:manual taxi line ends at predefined point": "65535:5.0:0:3:2",
+   "Other:predefined taxi line": "65280:5.0:0:3:2",
+   "Other:terminal taxi line": "255:5.0:0:3:2",
+   "Other:list title bar": "16777215:0.0:0:0:7",
+   "Other:list header": "16777215:3.5:0:0:7",
+   "Other:normal menu item": "16777215:3.5:0:0:7",
+   "Other:disabled menu item": "8421504:3.5:0:0:7",
+   "Transitions:transition grid": "5263440:3.0:0:0:7",
+   "Chat:text": "16777215:3.5:0:0:7",
+   "Chat:background": "3289650:3.5:0:0:7",
+   "Chat:name normal": "16777215:3.5:0:0:7",
+   "Chat:name unread": "14276864:3.5:0:0:7",
+   "Ground Network:exit": "16711680:3.5:0:3:7",
+   "Ground Network:taxiway": "65280:3.5:0:3:7",
+   "Ground Network:terminal taxiway": "255:3.5:0:3:7",
+   "Sector:line": "2302755:4.0:0:2:7",
+   "Sector:msaw": "32768:2.0:0:2:7",
+   "Sector:active sector background": "3684408:3.5:0:0:7",
+   "Sector:inactive sector background": "5196355:3.5:0:0:7"
+  },
+  "colours_from_v1": [
+   "Datablock:non concerned",
+   "Datablock:notified",
+   "Datablock:assumed",
+   "Datablock:transfer to me initiated",
+   "Datablock:redundant",
+   "Datablock:information",
+   "Datablock:even flight level",
+   "Datablock:odd flight level",
+   "Datablock:arrivals",
+   "Datablock:departures",
+   "Datablock:user 1",
+   "Datablock:user 2",
+   "Datablock:user 3",
+   "Datablock:user 4",
+   "Datablock:user 5",
+   "Datablock:user 6",
+   "Datablock:emergency",
+   "Datablock:ongoing requested by me",
+   "Datablock:ongoing requested by other",
+   "Datablock:ongoing accepted",
+   "Datablock:ongoing refused",
+   "Datablock:detailed background",
+   "Datablock:active item background",
+   "Datablock:arrival background",
+   "Datablock:departure background",
+   "Datablock:AC list background",
+   "Datablock:AC list selected background",
+   "Datablock:dimmed at conflict detection",
+   "Datablock:SCTA warning rectangle",
+   "Datablock:SCTA CFL used warning rectangle",
+   "Datablock:SCTA warning leader",
+   "Datablock:SCTA CFL used warning leader"
+  ],
+  "symbols": {
+   "0": [
+    "MOVETO -1 6",
+    "LINETO -1 -8",
+    "MOVETO 0 6",
+    "LINETO 0 -8",
+    "MOVETO 6 -1",
+    "LINETO -8 -1",
+    "MOVETO 6 0",
+    "LINETO -8 0"
+   ],
+   "1": [
+    "ARC 0 0 7 0 360"
+   ],
+   "2": [
+    "MOVETO -5 0",
+    "LINETO -1 4",
+    "LINETO 1 4",
+    "LINETO 5 0",
+    "LINETO 1 -4",
+    "LINETO -2 -4",
+    "LINETO -5 0",
+    "LINETO -5 4",
+    "LINETO 5 4",
+    "LINETO 5 -4",
+    "LINETO -5 -4",
+    "LINETO -5 0",
+    "POLYGON -1 1 1 1 1 -1 -1 -1"
+   ],
+   "3": [
+    "POLYGON -4 3 0 -4 4 3"
+   ],
+   "4": [
+    "MOVETO 0 -1",
+    "LINETO 0 2",
+    "MOVETO -1 0",
+    "LINETO 2 0"
+   ],
+   "5": [
+    "MOVETO -4 -4",
+    "LINETO 5 5",
+    "MOVETO 4 -4",
+    "LINETO -5 5"
+   ],
+   "6": [
+    "MOVETO 0 0"
+   ],
+   "7": [
+    "MOVETO 0 0"
+   ],
+   "8": [
+    "MOVETO 0 0"
+   ],
+   "9": [
+    "MOVETO 0 0"
+   ],
+   "10": [
+    "MOVETO 0 -4",
+    "LINETO 0 -11",
+    "MOVETO 0 4",
+    "LINETO 0 11",
+    "MOVETO -4 0",
+    "LINETO -11 0",
+    "MOVETO 4 0",
+    "LINETO 11 0",
+    "SETPIXEL 2 10",
+    "SETPIXEL 3 10",
+    "SETPIXEL 4 9",
+    "SETPIXEL 3 8",
+    "SETPIXEL 2 7",
+    "SETPIXEL 3 6",
+    "SETPIXEL 4 6",
+    "SETPIXEL 6 10",
+    "SETPIXEL 6 9",
+    "SETPIXEL 6 8",
+    "SETPIXEL 6 7",
+    "SETPIXEL 6 6",
+    "SETPIXEL 7 6",
+    "SETPIXEL 8 6",
+    "SETPIXEL 9 7",
+    "SETPIXEL 8 8",
+    "SETPIXEL 7 8",
+    "SETPIXEL 11 10",
+    "SETPIXEL 11 9",
+    "SETPIXEL 11 8",
+    "SETPIXEL 11 7",
+    "SETPIXEL 11 6"
+   ],
+   "11": [
+    "MOVETO 0 -4",
+    "LINETO 0 -11",
+    "MOVETO 0 4",
+    "LINETO 0 11",
+    "MOVETO -4 0",
+    "LINETO -11 0",
+    "MOVETO 4 0",
+    "LINETO 11 0",
+    "SETPIXEL 2 10",
+    "SETPIXEL 3 10",
+    "SETPIXEL 4 9",
+    "SETPIXEL 3 8",
+    "SETPIXEL 2 7",
+    "SETPIXEL 3 6",
+    "SETPIXEL 4 6",
+    "SETPIXEL 6 10",
+    "SETPIXEL 6 9",
+    "SETPIXEL 6 8",
+    "SETPIXEL 6 7",
+    "SETPIXEL 6 6",
+    "SETPIXEL 7 6",
+    "SETPIXEL 8 6",
+    "SETPIXEL 9 7",
+    "SETPIXEL 8 8",
+    "SETPIXEL 7 8",
+    "SETPIXEL 11 10",
+    "SETPIXEL 11 9",
+    "SETPIXEL 11 8",
+    "SETPIXEL 11 7",
+    "SETPIXEL 11 6"
+   ],
+   "12": [
+    "MOVETO -4 1",
+    "LINETO 0 -4",
+    "LINETO 4 1",
+    "LINETO -4 1"
+   ],
+   "13": [
+    "SETPIXEL 0 -10",
+    "SETPIXEL 0 -9",
+    "SETPIXEL 0 -8",
+    "SETPIXEL 0 -7",
+    "SETPIXEL 0 -6",
+    "SETPIXEL 0 -5",
+    "SETPIXEL 0 -4",
+    "ARC 0 0 4 0 360",
+    "SETPIXEL -3 0",
+    "SETPIXEL -4 0",
+    "SETPIXEL -5 0",
+    "SETPIXEL -6 0",
+    "SETPIXEL -7 0",
+    "SETPIXEL -8 0",
+    "SETPIXEL -9 0",
+    "SETPIXEL -10 0",
+    "SETPIXEL 3 0",
+    "SETPIXEL 4 0",
+    "SETPIXEL 5 0",
+    "SETPIXEL 6 0",
+    "SETPIXEL 7 0",
+    "SETPIXEL 8 0",
+    "SETPIXEL 9 0",
+    "SETPIXEL 10 0",
+    "SETPIXEL -9 1",
+    "SETPIXEL -8 1",
+    "SETPIXEL -7 1",
+    "SETPIXEL 9 1",
+    "SETPIXEL 8 1",
+    "SETPIXEL 7 1",
+    "ARC -4 2 2 0 360",
+    "ARC 4 2 2 0 360",
+    "SETPIXEL 0 -2",
+    "SETPIXEL -1 -2",
+    "SETPIXEL 0 1",
+    "SETPIXEL -1 1"
+   ],
+   "14": [
+    "MOVETO -1 -1",
+    "LINETO -1 0",
+    "LINETO 0 0",
+    "LINETO 0 -1",
+    "LINETO -1 -1"
+   ],
+   "15": [
+    "MOVETO 0 -12",
+    "LINETO -2 -11",
+    "LINETO -2 -2",
+    "LINETO -12 4",
+    "LINETO -12 7",
+    "LINETO -2 4",
+    "LINETO -2 9",
+    "LINETO -6 11",
+    "LINETO -6 14",
+    "LINETO 0 12",
+    "LINETO 6 14",
+    "LINETO 6 11",
+    "LINETO 2 9",
+    "LINETO 2 4",
+    "LINETO 12 7",
+    "LINETO 12 4",
+    "LINETO 2 -2",
+    "LINETO 2 -11",
+    "LINETO 0 -12"
+   ],
+   "16": [
+    "MOVETO 0 0"
+   ],
+   "17": [
+    "MOVETO 0 0"
+   ],
+   "18": [
+    "MOVETO 0 0"
+   ],
+   "19": [
+    "MOVETO 0 0"
+   ],
+   "20": [
+    "MOVETO 0 -4",
+    "LINETO 0 -11",
+    "MOVETO 0 4",
+    "LINETO 0 11",
+    "MOVETO -4 0",
+    "LINETO -11 0",
+    "MOVETO 4 0",
+    "LINETO 11 0",
+    "SETPIXEL 2 10",
+    "SETPIXEL 3 10",
+    "SETPIXEL 4 9",
+    "SETPIXEL 3 8",
+    "SETPIXEL 2 7",
+    "SETPIXEL 3 6",
+    "SETPIXEL 4 6",
+    "SETPIXEL 6 10",
+    "SETPIXEL 6 9",
+    "SETPIXEL 6 8",
+    "SETPIXEL 6 7",
+    "SETPIXEL 6 6",
+    "SETPIXEL 7 6",
+    "SETPIXEL 8 6",
+    "SETPIXEL 9 7",
+    "SETPIXEL 8 8",
+    "SETPIXEL 7 8",
+    "SETPIXEL 11 10",
+    "SETPIXEL 11 9",
+    "SETPIXEL 11 8",
+    "SETPIXEL 11 7",
+    "SETPIXEL 11 6"
+   ],
+   "21": [
+    "MOVETO 0 -4",
+    "LINETO 0 -11",
+    "MOVETO 0 4",
+    "LINETO 0 11",
+    "MOVETO -4 0",
+    "LINETO -11 0",
+    "MOVETO 4 0",
+    "LINETO 11 0",
+    "SETPIXEL 2 10",
+    "SETPIXEL 3 10",
+    "SETPIXEL 4 9",
+    "SETPIXEL 3 8",
+    "SETPIXEL 2 7",
+    "SETPIXEL 3 6",
+    "SETPIXEL 4 6",
+    "SETPIXEL 6 10",
+    "SETPIXEL 6 9",
+    "SETPIXEL 6 8",
+    "SETPIXEL 6 7",
+    "SETPIXEL 6 6",
+    "SETPIXEL 7 6",
+    "SETPIXEL 8 6",
+    "SETPIXEL 9 7",
+    "SETPIXEL 8 8",
+    "SETPIXEL 7 8",
+    "SETPIXEL 11 10",
+    "SETPIXEL 11 9",
+    "SETPIXEL 11 8",
+    "SETPIXEL 11 7",
+    "SETPIXEL 11 6"
+   ],
+   "22": [
+    "MOVETO -3 7",
+    "LINETO 3 7",
+    "LINETO 3 -7",
+    "LINETO -3 -7",
+    "LINETO -3 7"
+   ],
+   "23": [
+    "MOVETO 0 -12",
+    "LINETO -2 -11",
+    "LINETO -2 -3",
+    "LINETO -8 -9",
+    "LINETO -10 -7",
+    "LINETO -3 0",
+    "LINETO -10 7",
+    "LINETO -8 9",
+    "LINETO -2 3",
+    "LINETO -2 12",
+    "LINETO 2 12",
+    "LINETO 2 3",
+    "LINETO 8 9",
+    "LINETO 10 7",
+    "LINETO 3 0",
+    "LINETO 10 -7",
+    "LINETO 8 -9",
+    "LINETO 2 -3",
+    "LINETO 2 -11",
+    "LINETO 0 -12"
+   ]
+  },
+  "symbols_from_v1": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ],
+  "clip_area": "6"
+ },
+ "asr": {
+  "SHOWC": "1",
+  "LEADER": "5",
+  "SHOWLEADER": "0",
+  "TURNLEADER": "1",
+  "HISTORY_DOTS": "0"
+ },
+ "tag_family_v1": {
+  "name": "CoFrance",
+  "types": {
+   "0": {
+    "header": "TAGTYPE:0:3:1",
+    "items": [
+     "TAGITEM:17::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:7::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:4::1:0:0:0::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1"
+    ]
+   },
+   "1": {
+    "header": "TAGTYPE:1:9:1",
+    "items": [
+     "TAGITEM:7::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:1::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:16::0:1:0:0:CoFrance:0:0:::1",
+     "TAGITEM:90::0:1:41:0::0:1:::1",
+     "TAGITEM:21::0:1:0:0::0:1:::1",
+     "TAGITEM:42::0:1:0:0::0:1:::1",
+     "TAGITEM:17::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:65::0:1:25:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:9::1:0:0:0::0:1:::0",
+     "TAGITEM:80::0:0:32:0::0:1:::1",
+     "TAGITEM:26::0:1:0:0::0:1:::1",
+     "TAGITEM:11::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:0:0::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:12::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:46::0:1:0:0::0:1:::1",
+     "TAGITEM:44::0:1:0:0::0:1:::1",
+     "TAGITEM:33::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:3::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:17::0:1:0:0::0:0:::8"
+    ]
+   },
+   "2": {
+    "header": "TAGTYPE:2:10:1",
+    "items": [
+     "TAGITEM:6::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:1::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:16::0:1:0:2:CoFrance:0:1:::1",
+     "TAGITEM:90::0:1:41:0::0:1:::1",
+     "TAGITEM:42::0:1:870:0::0:1:Mode S PlugIn::1",
+     "TAGITEM:17::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:8::0:1:29:0:CoFrance:0:1:::1",
+     "TAGITEM:65::0:1:25:0::0:1:::1",
+     "TAGITEM:16::0:1:0:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:9::1:0:8:9::0:1:::0",
+     "TAGITEM:11::0:0:32:0::0:1:::1",
+     "TAGITEM:26::0:1:20:0::0:1:::1",
+     "TAGITEM:10::0:1:30:0:CoFrance:0:1:::1",
+     "TAGITEM:9::0:1:500:0:CoFrance:0:1:CoFrance::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:1:16::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:13::0:1:11:0:CoFrance:0:1:::1",
+     "TAGITEM:25::0:1:10:14::0:1:::1",
+     "TAGITEM:23::0:1:15:12::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:5::0:0:26:0:CoFrance:0:1:::1",
+     "TAGITEM:28::0:1:22:21::0:1:::1",
+     "TAGITEM:17::0:1:7:2::0:1:::1"
+    ]
+   },
+   "3": {
+    "header": "TAGTYPE:3:0:0",
+    "items": [
+     "TAGITEM:39::1:1:0:0::0:1:::0"
+    ]
+   },
+   "4": {
+    "header": "TAGTYPE:4:3:1",
+    "items": [
+     "TAGITEM:17::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:7::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:4::1:0:0:0::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1"
+    ]
+   },
+   "5": {
+    "header": "TAGTYPE:5:1:0",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:9::1:1:0:0::0:1:::0",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:0:1::0:1:::1",
+     "TAGITEM:3::0:0:0:0::0:1:::1",
+     "TAGITEM:17::0:1:7:0::0:1:::1"
+    ]
+   },
+   "6": {
+    "header": "TAGTYPE:6:1:0",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:9::1:1:8:32::0:1:::9",
+     "TAGITEM:80::0:0:32:0::0:1:::9",
+     "TAGITEM:78::0:1:0:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:56::0:0:17:0::0:1:::1",
+     "TAGITEM:47::0:1:19:0::0:1:::1",
+     "TAGITEM:66::0:1:29:0::0:1:::1"
+    ]
+   },
+   "7": {
+    "header": "TAGTYPE:7:1:0",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:81::1:1:0:0::0:1:::0",
+     "TAGITEM:16::0:1:0:0::0:1:::1"
+    ]
+   },
+   "8": {
+    "header": "TAGTYPE:8:0:0",
+    "items": [
+     "TAGITEM:39::1:1:0:0::0:1:::0"
+    ]
+   },
+   "9": {
+    "header": "TAGTYPE:9:0:0",
+    "items": [
+     "TAGITEM:39::1:1:0:0::0:1:::0"
+    ]
+   },
+   "10": {
+    "header": "TAGTYPE:10:1:0",
+    "items": [
+     "TAGITEM:7::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:4::1:0:0:1::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1"
+    ]
+   },
+   "11": {
+    "header": "TAGTYPE:11:1:0",
+    "items": [
+     "TAGITEM:7::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:4::1:0:0:1::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1"
+    ]
+   },
+   "12": {
+    "header": "TAGTYPE:12:2:0",
+    "items": [
+     "TAGITEM:6::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:2::1:1:33:0::0:1:::0",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:0:1::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1"
+    ]
+   },
+   "13": {
+    "header": "TAGTYPE:13:1:0",
+    "items": [
+     "TAGITEM:7::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:4::1:0:0:1::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1"
+    ]
+   },
+   "14": {
+    "header": "TAGTYPE:14:1:0",
+    "items": [
+     "TAGITEM:7::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:4::1:0:0:1::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1"
+    ]
+   },
+   "15": {
+    "header": "TAGTYPE:15:2:0",
+    "items": [
+     "TAGITEM:6::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:2::1:1:33:0::0:1:::0",
+     "TAGITEM:1:@:0:1:0:0::0:1:::1",
+     "TAGITEM:9::0:0:33:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:0:1::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1"
+    ]
+   },
+   "16": {
+    "header": "TAGTYPE:16:9:1",
+    "items": [
+     "TAGITEM:7::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:1::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:16::0:1:0:0:CoFrance:0:0:::1",
+     "TAGITEM:90::0:1:41:0::0:1:::1",
+     "TAGITEM:21::0:1:0:0::0:1:::1",
+     "TAGITEM:42::0:1:0:0::0:1:::1",
+     "TAGITEM:17::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:65::0:1:25:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:9::1:0:0:0::0:1:::0",
+     "TAGITEM:80::0:0:32:0::0:1:::1",
+     "TAGITEM:26::0:1:0:0::0:1:::1",
+     "TAGITEM:11::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:0:0::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:12::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:46::0:1:0:0::0:1:::1",
+     "TAGITEM:44::0:1:0:0::0:1:::1",
+     "TAGITEM:33::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:3::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:17::0:1:0:0::0:0:::8"
+    ]
+   },
+   "17": {
+    "header": "TAGTYPE:17:10:1",
+    "items": [
+     "TAGITEM:6::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:1::0:0:0:0:CoFrance:0:1:::1",
+     "TAGITEM:16::0:1:0:2:CoFrance:0:1:::1",
+     "TAGITEM:90::0:1:41:0::0:1:::1",
+     "TAGITEM:42::0:1:870:0::0:1:Mode S PlugIn::1",
+     "TAGITEM:17::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:8::0:1:29:0:CoFrance:0:1:::1",
+     "TAGITEM:65::0:1:25:0::0:1:::1",
+     "TAGITEM:16::0:1:0:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:9::1:0:8:9::0:1:::0",
+     "TAGITEM:11::0:0:32:0::0:1:::1",
+     "TAGITEM:26::0:1:20:0::0:1:::1",
+     "TAGITEM:10::0:1:30:0:CoFrance:0:1:::1",
+     "TAGITEM:9::0:1:500:0:CoFrance:0:1:CoFrance::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:1:16::0:1:::1",
+     "TAGITEM:2::0:1:0:0:CoFrance:0:1:::1",
+     "TAGITEM:13::0:1:11:0:CoFrance:0:1:::1",
+     "TAGITEM:25::0:1:10:14::0:1:::1",
+     "TAGITEM:23::0:1:15:12::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:5::0:0:26:0:CoFrance:0:1:::1",
+     "TAGITEM:28::0:1:22:21::0:1:::1",
+     "TAGITEM:17::0:1:7:2::0:1:::1"
+    ]
+   },
+   "18": {
+    "header": "TAGTYPE:18:5:1",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:21::0:1:0:0::0:1:::1",
+     "TAGITEM:42::0:0:0:0::0:1:::1",
+     "TAGITEM:65::0:1:25:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:9::1:0:0:0::0:1:::0",
+     "TAGITEM:26::0:1:0:0::0:1:::1",
+     "TAGITEM:16::0:1:0:0::0:1:::1",
+     "TAGITEM:76::0:0:0:0::0:1:::1",
+     "TAGITEM:11::0:0:32:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:0:0::0:1:::1",
+     "TAGITEM:3::0:0:0:0::0:1:::1",
+     "TAGITEM:28::0:1:0:0::0:1:::1",
+     "TAGITEM:13::0:1:0:0::0:1:::1",
+     "TAGITEM:30::0:1:0:0::0:1:::1",
+     "TAGITEM:17::0:1:0:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:32::0:0:0:0::0:1:::1",
+     "TAGITEM:31::0:1:0:0::0:1:::1",
+     "TAGITEM:33::0:0:0:0::0:1:::1",
+     "TAGITEM:34::0:1:0:0::0:1:::1",
+     "TAGITEM:19::0:1:0:0::0:1:::1"
+    ]
+   },
+   "19": {
+    "header": "TAGTYPE:19:5:1",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:21::0:1:0:0::0:1:::1",
+     "TAGITEM:42::0:1:0:0::0:1:::1",
+     "TAGITEM:65::0:1:25:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:9::1:0:8:0::0:1:::0",
+     "TAGITEM:26::0:1:20:6::0:1:::1",
+     "TAGITEM:16::0:1:0:5::0:1:::1",
+     "TAGITEM:76::0:0:0:0::0:1:::1",
+     "TAGITEM:11::0:0:32:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:4::0:0:16:1::0:1:::1",
+     "TAGITEM:3::0:0:0:0::0:1:::1",
+     "TAGITEM:28::0:1:10:0::0:1:::1",
+     "TAGITEM:13::0:1:0:2::0:1:::1",
+     "TAGITEM:30::0:1:0:3::0:1:::1",
+     "TAGITEM:17::0:1:7:4::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:20::0:0:11:0::0:1:::1",
+     "TAGITEM:29::0:1:26:36::0:1:::1",
+     "TAGITEM:23::0:1:12:15::0:1:::1",
+     "TAGITEM:24::0:1:13:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:25::0:0:14:0::0:1:::1",
+     "TAGITEM:66::0:1:29:0::0:1:::1"
+    ]
+   },
+   "20": {
+    "header": "TAGTYPE:20:1:0",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:9::1:1:8:32::0:1:::9",
+     "TAGITEM:80::0:0:32:0::0:1:::9",
+     "TAGITEM:78::0:1:0:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:56::0:0:17:0::0:1:::1",
+     "TAGITEM:47::0:1:19:0::0:1:::1",
+     "TAGITEM:66::0:1:29:0::0:1:::1"
+    ]
+   },
+   "21": {
+    "header": "TAGTYPE:21:1:0",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:9::1:1:8:32::0:1:::9",
+     "TAGITEM:80::0:0:32:0::0:1:::9",
+     "TAGITEM:78::0:1:0:0::0:1:::1",
+     "TAGITEM:0::0:0:0:0::0:1:::1",
+     "TAGITEM:56::0:0:17:0::0:1:::1",
+     "TAGITEM:47::0:1:19:0::0:1:::1",
+     "TAGITEM:66::0:1:29:0::0:1:::1"
+    ]
+   },
+   "22": {
+    "header": "TAGTYPE:22:1:0",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:81::1:1:0:0::0:1:::0",
+     "TAGITEM:16::0:1:0:0::0:1:::1"
+    ]
+   },
+   "23": {
+    "header": "TAGTYPE:23:1:0",
+    "items": [
+     "TAGITEM:90::0:0:41:0::0:1:::1",
+     "TAGITEM:81::1:1:0:0::0:1:::0",
+     "TAGITEM:16::0:1:0:0::0:1:::1"
+    ]
+   }
+  }
+ }
+}

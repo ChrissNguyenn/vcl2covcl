@@ -1,0 +1,71 @@
+name: vcl2covcl
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Tests (${{ matrix.os }}, Python 3.12)
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: python -m pip install -e ".[test]"
+
+      - name: Run pytest
+        run: python -m pytest
+
+  exe:
+    name: Windows exe
+    needs: test
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: python -m pip install ".[build]"
+
+      - name: Build vcl2covcl.exe
+        run: pyinstaller --onefile --windowed --noconfirm --name vcl2covcl --collect-data vcl2covcl packaging/vcl2covcl_gui.py
+
+      # The exe also runs the command line when given arguments: convert the test package with it.
+      - name: Smoke test the exe
+        shell: pwsh
+        run: |
+          python -c "import sys; sys.path.insert(0, 'tests'); from pathlib import Path; from package_fixture import PACKAGE, COVCL_TOML, fake_dll, write_tree; write_tree(Path('smoke/package'), PACKAGE); write_tree(Path('smoke/covcl'), {'CoVCL.dll': fake_dll(), 'CoVCL.toml': COVCL_TOML.encode()})"
+          $run = Start-Process -FilePath dist\vcl2covcl.exe -ArgumentList @('convert', '--package', 'smoke\package', '--covcl', 'smoke\covcl') -Wait -PassThru
+          if ($run.ExitCode -ne 0) { throw "vcl2covcl.exe exited with code $($run.ExitCode)" }
+          foreach ($file in @('smoke\package\CoVCL Test ACC.prf', 'smoke\package\VVXX\Settings\CoVCL\Tags.txt', 'smoke\package\vcl2covcl-report.txt')) {
+            if (-not (Test-Path -LiteralPath $file)) { throw "the exe did not write $file" }
+          }
+          Get-Content -LiteralPath 'smoke\package\vcl2covcl-report.txt' -TotalCount 6
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: vcl2covcl
+          path: dist/vcl2covcl.exe
+          if-no-files-found: error
+
+      - name: Attach the exe to the release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v3
+        with:
+          name: vcl2covcl ${{ github.ref_name }}
+          files: dist/vcl2covcl.exe

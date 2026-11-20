@@ -1,0 +1,17 @@
+{
+ "_comment": "Profiles vcl2covcl converts (names of the .prf files without extension). Radar profiles are converted, tower profiles only with --include. A profile in neither list is converted when it opens a radar ASR (Standard ES radar screen, not *_GND/*_TWR), with a warning in the report.",
+ "radar": [
+  "Hanoi ACC",
+  "Ho Chi Minh ACC",
+  "Mekong Radar",
+  "Vientianie ACC",
+  "Da Nang VVDN",
+  "Cam Ranh VVCR",
+  "Siem Reap VDSR and VDSA",
+  "Phnom Penh ACC"
+ ],
+ "tower": [
+  "Noi Bai VVNB",
+  "Tan Son Nhat VVTS"
+ ]
+}
